@@ -53,7 +53,7 @@ R8	Develop a diagram which describes the control flow of your application. Your 
 
 
 
-R9	Develop an implementation plan which:
+R9	Develop an implementation plan which: (TRELLO)(SCREENSHOT)
 - outlines how each feature will be implemented and a checklist of tasks for each feature
 - prioritise the implementation of different features, or checklist items within a feature
 - provide a deadline, duration or other time indicator for each feature or checklist/checklist-item
@@ -65,7 +65,7 @@ Utilise a suitable project management platform to track this implementation plan
 
 
 R10	Design help documentation which includes a set of instructions which accurately describe how to use and install the application.
-
+(SUITABLE RUBY INTERPERATER INSTALLED SUCH AS....)
 You must include:
 - steps to install the application
 - any dependencies required by the application to operate
@@ -75,6 +75,12 @@ You must include:
 
 Slide deck
 
+Present your Terminal application to the class. You must provide a walk-through of the logic of your application and how the application is used.
+
+A walk-through of your Terminal application, its features and how it used
+A walk-through of the logic of your Terminal application and code
+A review of your development/build process including challenges, ethical issues, favourite parts, etc
+(challengess, ethical learnings, learnings)
 R11	An overview of your Terminal application
 	The main features and overall structure of your app
 
@@ -85,6 +91,8 @@ What I learnt
 Anything id do differently
 
 ---------------------------------------------------------------
+
+COMMENT THE SHIT OUTTA THE CODE
 
 R13	Implement features in the software development plan you have designed. You must utilise a range of programming concepts and structures using Ruby such as:
 - variables and variable scope
@@ -109,7 +117,7 @@ R16	Creates an application which runs without error and has features that are co
 
 
 
-R17	Design TWO tests which check that the application is running as expected.
+R17	Design TWO tests which check that the application is running as expected. (UNIT TESTS)
 
 Each test should:
 - cover a different feature of the application
@@ -121,7 +129,7 @@ Each test should:
 
 
 R18	Utilise source control throughout the development of the application by:
-- making regular commits (at least 20 commits) with a commit message that summarises the changes
+- making regular commits (AT LEAST 20 commits) with a commit message that summarises the changes
 - pushing all commits to a remote repository
 
 
