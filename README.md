@@ -19,7 +19,7 @@ The property manager app will help Landlord organise and manage and store their 
 
 I am developing this app to do the job a property manager and manage my own property because as a Landlord myself, I would like an easier way to manage my property/ies without havign to pay $58 weekly, thats over $3000 a year for something i can manage through my terminal
 
-Target audience for this app definitley be all home owners and even tenants alike who would rather not deal with property managers 
+Target audience for this app definitley be all home owners looking to save on management fees and even tenants alike who would rather not deal with property managers 
 
 By cloning the git and installing the requiremtns and gems etc and following the steps below!??!? and running the program through their terminal and following the options and prompts
 EXPAND ON HOW THE AUDIENCE WILL USE(USAGE GUIDE,INSTALLATION GUIDE step by step processes)(ANOTHER HEADING FOR MOTIVATION?????????? CHECK OTHER GITHUBS)

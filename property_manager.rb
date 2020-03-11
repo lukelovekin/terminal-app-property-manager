@@ -3,7 +3,11 @@ require 'tty/font'
 require_relative './property_manager_tenant'
 require_relative './property_manager_landlord'
 
-include Tenant
+@house_details = "32 Belleview Parade, Paddington, 4064"
+@exit = "Invalid Option, Please enter a number or Enter to Exit"
+@entry_report = "entry report here"
+@exit_report = "exit report here"                            #variables not needed for this one house scenario but if a landlord had a portfolio?
+@tenancy_agreement = "tenancy agreement here"
 
 module Font
     def font 
@@ -11,9 +15,23 @@ module Font
     end
 end
 
+module Admin           
+def ten_house_options
+     
+        puts "What would you like to view?"
+        puts " #{@house_details}"
+        puts "1 #{@entry_report}"
+        puts "2 #{@exit_report}"
+        puts "3 #{@tenancy_agreement}"
+        puts "Exit"
+#open up ^^^^ documents through here the terminal
+# any point exit to main
+end
+end
+
 def homepage_welcome
   include Font
-        # font = TTY::Font.new(:standard)
+        
         system('clear')
         font1 = font.write("Property Manager")
         puts font1
