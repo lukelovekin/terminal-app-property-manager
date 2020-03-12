@@ -2,7 +2,7 @@ require 'csv'
 
 def tenant_home
     system("clear")
-    puts font.write("PM, Tenant")
+    puts font.write("PM, Tenant").colorize(:red)
     puts "Welcome Tenant!"
     # puts house details and a place to change it
     puts "What would you like to do, enter the number?"
@@ -34,6 +34,7 @@ end
 
 def ten_house_admin
  include Admin
+ 
     while true
 
         ten_house_options

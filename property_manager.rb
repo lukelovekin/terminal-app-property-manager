@@ -1,5 +1,6 @@
 # require 'tty-table'
 require 'tty/font'
+require 'colorize'
 require_relative './property_manager_tenant'
 require_relative './property_manager_landlord'
 
@@ -34,7 +35,7 @@ def homepage_welcome
         
         system('clear')
         font1 = font.write("Property Manager")
-        puts font1
+        puts font1.colorize(:blue)
         puts 
         puts"Press Ctrl C to exit the Terminal App at any time"
         puts

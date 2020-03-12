@@ -2,7 +2,7 @@ require 'csv'
 
 def landlord_home
    system('clear')
-    puts font.write("PM, Landlord")
+    puts font.write("PM, Landlord").colorize(:green)
     puts "Welcome Landlord"
     puts
     puts "Select House"
@@ -37,7 +37,7 @@ end
 
 def house_page
     system('clear')
-    puts font.write("PM, Landlord") # DRY THIS
+    puts font.write("PM, Landlord").colorize(:green) # DRY THIS
     puts "Welcome Landlord"
     puts
     puts "32 Belleview Parade, Paddington, 4064, $630p/w"
@@ -75,7 +75,7 @@ def admin
      while true
                               #DRY THIS
         system('clear')
-        puts font.write("PM, Landlord")
+        puts font.write("PM, Landlord").colorize(:green)
         puts "What would you like to view?"
         puts "1. House Details, Entry/Exit Report, Tenancy Agreement"
         puts "2. New Tenant Checklist"
@@ -86,6 +86,7 @@ def admin
         case option_a
         when "1"
             ten_house_options
+            gets.chomp
         when "2"
             ############ puts 
         when "3"
@@ -112,7 +113,7 @@ def advertising
     while true
                                 #DRY this
         system('clear')
-        puts font.write("PM, Landlord")
+        puts font.write("PM, Landlord").colorize(:green)
         advertising_words
 
         option_ad = gets.chomp
@@ -136,7 +137,7 @@ def finances
     while true
                                       
         system('clear')                   #DRY THIS
-        puts font.write("PM, Landlord")
+        puts font.write("PM, Landlord").colorize(:green)
         puts "What would you like to do, enter the number?"
         puts                                                 #-----if i get time
         puts "1. Maintenance Requests Amounts/Quotes"        #link to tenant page refernce back to maintenance requestS??
@@ -162,7 +163,7 @@ def maintenance_request
     while true
 
         system('clear')                   #DRY THIS
-        puts font.write("PM, Landlord")
+        puts font.write("PM, Landlord").colorize(:green)     #Dry these
         puts
         puts "What would you like to do, enter the number?"
         puts "1. Maintenance Requests"
@@ -191,7 +192,7 @@ end
 def subcontractors
 
     system('clear')                   #DRY THIS
-    puts font.write("PM, Landlord")
+    puts font.write("PM, Landlord").colorize(:green)
     puts "Handy Man: Tim Unsted 0432345434; tunsted@gmail.com"
     puts   
     puts "Carpenter: Tom Undone 0478787877; tundone@gmail.com"
