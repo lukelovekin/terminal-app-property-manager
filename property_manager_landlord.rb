@@ -1,3 +1,4 @@
+require 'csv'
 
 def landlord_home
    system('clear')
@@ -168,16 +169,22 @@ def maintenance_request
         puts "2. Subcontractor contact details"
         puts "Exit"
         option_mr = gets.chomp
+    
         case option_mr
         when "1"
-                             # linkn to the same page as tenants requests
+        CSV.foreach ('maintenance.csv') do |row|
+            puts row.inspect
+            end
+            puts
+            puts "Press Enter to Exit"
+            gets.chomp                           #DRY THIS NONSENSE
         when "2"
             subcontractors
         else
             puts @exit
             gets.chomp
-        end
-        house_page
+        end   
+         house_page
     end
 end
 

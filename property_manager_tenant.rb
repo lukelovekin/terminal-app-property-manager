@@ -1,3 +1,5 @@
+require 'csv'
+
 def tenant_home
     system("clear")
     puts font.write("PM, Tenant")
@@ -76,9 +78,8 @@ def maintenance_requests
     case option_mr
     when "1"
         puts "Please enter you request with as much detail as possible"
-        tenant_maint_req = gets.chomp
+        to_csv
         puts "Awesome, your request has been stored in text for landlord to read"
-        back_to_hp   #method to get back to homepage
     when "2"
         puts "Check Maintenance Notes to check Request status"
         back_to_hp
@@ -88,6 +89,16 @@ def maintenance_requests
         puts @exit
     end
 end 
+
+def to_csv
+    a = []
+    b = gets.chomp
+    a << b
+    CSV.open("maintenance.csv", "a") do |csv|
+        puts csv
+        csv << a
+    end
+end
 
 def landlord_details
     puts "Name: John West"

@@ -66,7 +66,7 @@ Implementation plan.
 - provide a deadline, duration or other time indicator for each feature or checklist/checklist-item
 > Your checklists for each feature should have at least 5 items.	
 
-Using a Trello, an online trello board web tool, tooutline how each feature will be implemented
+Using a Trello, an online trello board web tool, to outline how each feature will be implemented
 
 
 
