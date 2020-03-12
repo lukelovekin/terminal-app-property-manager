@@ -61,11 +61,6 @@ CREATE FLOW DIAGRAM MAYBE A FEW ( WORKFLOW/LOGIC INTERGRATION OF THE FEATURE,GIT
 
 Implementation plan. 
 
-- outlines how each feature will be implemented and a checklist of tasks for each feature
-- different features, or checklist items within a feature
-- provide a deadline, duration or other time indicator for each feature or checklist/checklist-item
-> Your checklists for each feature should have at least 5 items.	
-
 Using a Trello, an online trello board web tool, to outline how each feature will be implemented
 
 
@@ -79,25 +74,6 @@ You must include:
 - any system/hardware requirements
 
 -----------------------------------------------------------------
-
-Slide deck
-
-Present your Terminal application to the class. You must provide a walk-through of the logic of your application and how the application is used.
-
-A walk-through of your Terminal application, its features and how it used
-A walk-through of the logic of your Terminal application and code
-A review of your development/build process including challenges, ethical issues, favourite parts, etc
-(challengess, ethical learnings, learnings)
-R11	An overview of your Terminal application
-	The main features and overall structure of your app
-
-
-R12	An overview of your code	
-An explanation of the important parts of your code
-What I learnt
-Anything id do differently
-
----------------------------------------------------------------
 
 COMMENT THE SHIT OUTTA THE CODE
 

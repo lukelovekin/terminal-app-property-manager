@@ -54,7 +54,7 @@ end
 
 def next_menu
     while true
-        option_nm = gets.chomp
+        option_nm = gets.chomp.capitalize
         case option_nm
         when "1"
             admin
@@ -64,6 +64,8 @@ def next_menu
             finances
         when "4"
             maintenance_request
+        when "Exit"
+            house_page
         else 
            puts @exit
         end 
