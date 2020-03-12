@@ -60,7 +60,7 @@ CREATE FLOW DIAGRAM MAYBE A FEW ( WORKFLOW/LOGIC INTERGRATION OF THE FEATURE,GIT
 
 
 Implementation plan. 
-
+ADD LINK AND PHOTOS TO TRELLO
 Using a Trello, an online trello board web tool, to outline how each feature will be implemented
 
 

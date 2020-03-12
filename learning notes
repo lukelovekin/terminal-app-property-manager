@@ -6,3 +6,8 @@ https://she.blogs.latrobe.edu.au/2019/06/10/staying-motivated-exam-block/organis
 
 
 https://trello.com/b/eP9uoFaY/property-manager-terminal-app trello board
+
+
+
+# table = TTY::Table.new ['column header 1',"column header 2"], [['a1','a2'],['b1','b2']]
+# puts table.render(:ascii)
