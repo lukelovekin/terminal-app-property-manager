@@ -3,6 +3,7 @@ def landlord_home
    system('clear')
     puts font.write("PM, Landlord")
     puts "Welcome Landlord"
+    puts
     puts "Select House"
     puts "1. #{@house_details}"        #is this scope necessary? default class?
     puts 
@@ -70,14 +71,16 @@ end
 
 def admin
     include Admin
-    
+     while true
+                              #DRY THIS
+        system('clear')
+        puts font.write("PM, Landlord")
         puts "What would you like to view?"
         puts "1. House Details, Entry/Exit Report, Tenancy Agreement"
         puts "2. New Tenant Checklist"
         puts "3. Email Templates"
         puts "4. Quarterly Inspections/ Checklists"
         puts "Exit"
-    while true
         option_a = gets.chomp
         case option_a
         when "1"
@@ -97,6 +100,7 @@ def admin
 end
 
 def advertising_words
+    puts
     puts "What would you like to do, enter the number?"
     puts "1. Upload to internet checklist"
     puts "2. Inspections Planner"
@@ -105,7 +109,9 @@ end
 
 def advertising
     while true
-
+                                #DRY this
+        system('clear')
+        puts font.write("PM, Landlord")
         advertising_words
 
         option_ad = gets.chomp
@@ -127,22 +133,22 @@ end
 
 def finances
     while true
+                                      
+        system('clear')                   #DRY THIS
+        puts font.write("PM, Landlord")
         puts "What would you like to do, enter the number?"
-        puts  #-----if i get time
-        puts "1. Maintenance requests" #link to tenant page
-        puts "2. Rent Due Date"        # "   "    "     "
-        puts "3. Balances"             # "   "    "     "
-        puts "4. Income Statements"    # "   "    "     "
+        puts                                                 #-----if i get time
+        puts "1. Maintenance Requests Amounts/Quotes"        #link to tenant page refernce back to maintenance requestS??
+        puts "2. Rent Due Date"                              # "   "    "     "
+        puts "3. Balances (Rent income - Bills)"             # "   "    "     "   
         option_f = gets.chomp
         case option_f
         when "1"
                 #Read tenants request doc
         when "2"
-                #
+                # same as tenant due date checklist
         when "3"
-
-        when "4"
-
+                # if time put balance from tenant checklist - maintenece expenses
         else
             puts @exit
             gets.chomp   
@@ -151,11 +157,74 @@ def finances
     end
 end
 
+def maintenance_request
+    while true
 
-# def maintenance_request
-#     puts "What would you like to do, enter the number?"
-#     option_mr = gets.chomp
-#     case option_mr
-#     when
+        system('clear')                   #DRY THIS
+        puts font.write("PM, Landlord")
+        puts
+        puts "What would you like to do, enter the number?"
+        puts "1. Maintenance Requests"
+        puts "2. Subcontractor contact details"
+        puts "Exit"
+        option_mr = gets.chomp
+        case option_mr
+        when "1"
+                             # linkn to the same page as tenants requests
+        when "2"
+            subcontractors
+        else
+            puts @exit
+            gets.chomp
+        end
+        house_page
+    end
+end
 
-# end
+def subcontractors
+
+    system('clear')                   #DRY THIS
+    puts font.write("PM, Landlord")
+    puts "Handy Man: Tim Unsted 0432345434; tunsted@gmail.com"
+    puts   
+    puts "Carpenter: Tom Undone 0478787877; tundone@gmail.com"
+    puts 
+    puts "Plumber: Tony Mcmahon 043234345; mcmahon@gmail.com"
+    puts
+    puts "Electrician: Shane Firgart 0412345678; figart@gmail.com"
+    puts
+    new_sub_to_sub                                                 #will only work once at the moment, will fix if time
+    puts
+    puts add = "1. To Add"  
+    puts
+    puts "Exit"
+
+    option_s = gets.chomp
+    option_s == "1" ? add_new_sub : house_page  # puts an invalid here instead of directing to homepage later
+end
+
+def add_new_sub
+
+    puts "Enter Trade Name:"
+    trade_name = gets.chomp
+    puts "Enter Name of Tradesmens:"
+    name = gets.chomp
+    puts "Enter Their Phone Number:"
+    phone = gets.chomp
+    puts "Enter Their Email:"
+    email = gets.chomp
+
+    add_sent = "Would you like to add #{trade_name}: #{name} #{phone}; #{email} to your Subcontractor Details?"
+    puts "Enter 'y' for yes, any other key to Exit)"
+
+    @n_y = gets.chomp
+
+    @n_y == "y" ? @n_y = "#{trade_name}: #{name} #{phone}; #{email}" : house_page
+    
+    subcontractors
+
+end
+
+def new_sub_to_sub
+    puts @n_y
+end
