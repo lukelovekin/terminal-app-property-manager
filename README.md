@@ -2,11 +2,10 @@
 
 # Property Manager Terminal App
 
+Github page:
+https://github.com/lukelovekin/terminal-app-property-manager
 
-REFERENCE !!!!
-ADD GITHUB LINK!!!!!!!!!!!
-
-### Statement of purpose and scope
+## Statement of purpose and scope
 
 The "Propery Manager Terminal App" will allow both Landlords and Tenants to manage their rentals without the use of a property manager therefor saving the Landlord management fees between 6-9% of thier weekly rent income. Using this app the Tenant will be able moneouvre their way through their terminal nd following the options and prompts to store and access infomation such as entry and exit reports, tenancy agreements, when rent is due and how much, send maintanence requests etc.
 
@@ -18,104 +17,46 @@ Target audience for this app definitley be all home owners looking to save on ma
 
 By cloning the git and installing the requiremtns and gems etc and following the steps below!??!? and running the program through their terminal and following the options and prompts
 EXPAND ON HOW THE AUDIENCE WILL USE(USAGE GUIDE,INSTALLATION GUIDE step by step processes)(ANOTHER HEADING FOR MOTIVATION?????????? CHECK OTHER GITHUBS)
-300-500 WORDS
+
+## Applications features and how they work
+
+- Easy to use/follow organization. 
+With the use of helpful output prompts and case statements that allow for all intputs to be handled, whether valid input was entered or not, to either direct them to their next page or give them another prompt on what to do.
+
+- Store and Read text to and from a csv file
+Using the appropriate gem with its required methods and  block of code to execute, the user is able to make maintenance requests and store text into a csv
+
+- Landlord and seperate Tenant side of the application
+Using loops and conditional control structures and with input from the user they can be directed to their side of the application and directed to where they want to go with the loops implemented to keep them from entering anything other than valid input
 
 
-
-Applications features and how they work
--
-- at least THREE features and describe
--
--
--
-Note: Ensure that your features above allow you to demonstrate your understanding of the following language elements and concepts:
 - use of variables and the concept of variable scope
-- loops and conditional control structures
+
 - error handling
 Consult with your educator to check your features are sufficient .	300 words (approx. 100 words per feature)
 
-
-
-User interaction and experience
-
+## User interaction and experience
 
 - how the user will find out how to interact with / use each feature
 - how the user will interact with / use each feature
 - how errors will be handled by the application and displayed to the user
 After running the app in the terminal the user will greeted with the app logo and a home screen choose whether they are a tenant or a landlord, they will be then directed to their next home screen where there will be options and helpful information and prompts displayed of which they can input using their keyboard to go to where they wouldlike to go. The user will not be left without options and the chance to input any given time, making interaction and navigation clear and easy to use. Any non self explanatory options or terminoloy will be displayed on each page. at any stage when the user is finished they can exit the application. Most of the users interaction will be entering options dispolayed on screen otherwise further input instructions will be explain where they need to be. If at any point the users input is invalid the application will (show its most recent options menu until correct input is entered or until user exits) (?following the exit options?)(EXPAND)
 
+## Control flow diagram
+https://github.com/lukelovekin/terminal-app-property-manager/blob/master/docs/Flowchart.PNG
 
+## Implementation plan. 
+https://trello.com/b/eP9uoFaY/property-manager-terminal-app
 
-Control flow diagram
-R8	Develop a diagram which describes the control flow of your application. Your diagram must:
-- show the workflow/logic and/or integration of the features in your application for each feature.
-- utilise a recognised format or set of conventions for a control flow diagram, such as UML.
-CREATE FLOW DIAGRAM MAYBE A FEW ( WORKFLOW/LOGIC INTERGRATION OF THE FEATURE,GITHUB E.GS...UML?)
-
-
-
-Implementation plan. 
-ADD LINK AND PHOTOS TO TRELLO
 Using a Trello, an online trello board web tool, to outline how each feature will be implemented
 
+## Help / How to install
 
+- Make sure you have ruby and a suitable ruby interperater downloaded.
 
+- Install bundler(if you haven't already) 
 
-R10	Design help documentation which includes a set of instructions which accurately describe how to use and install the application.
-(SUITABLE RUBY INTERPERATER INSTALLED SUCH AS....)
-You must include:
-- steps to install the application
-- any dependencies required by the application to operate
-- any system/hardware requirements
+- From the "src" folder in "LukeLovekin_T1A2" using the terminal run the following command
 
+./pmanager.sh
 
-
-
-
-
-
--------------------------------------------------------
-
-R13	Implement features in the software development plan you have designed. You must utilise a range of programming concepts and structures using Ruby such as:
-- variables and variable scope
-- loops and conditional control structures
-- write and utilise simple functions
-- error handling
-- input and output
-- importing a Ruby Gem
-- using functions from a Ruby Gem
-
-
-R15	Apply all style and conventions for the programming language consistently to all code produced.
-
-
-
-R16	Creates an application which runs without error and has features that are consistent with the development plan.
-
-
-
-R17	Design TWO tests which check that the application is running as expected. (UNIT TESTS)
-
-Each test should:
-- cover a different feature of the application
-- state what is being tested
-- provide at least TWO test cases and the expected results for each test case
-
-> An outline of the testing procedure and cases should be included with the source code of the application
-
-
-
-R18	Utilise source control throughout the development of the application by:
-- making regular commits (AT LEAST 20 commits) with a commit message that summarises the changes
-- pushing all commits to a remote repository
-
-
-
-R19	Utilise developer tools to facilitate the execution of the application:
-For example,
-- writing a script which turns the application into an executable; OR
-- packaging the application for use as a module or dependency
-
--------------------------------------------
-
-submit via canvas
