@@ -10,25 +10,25 @@ require_relative './property_manager_landlord'
 @exit_report = "exit report here"                           
 @tenancy_agreement = "tenancy agreement here"                             #"Instance variables of ruby do not need declaration" https://ruby-doc.org/docs/
 
-module Font
+module Font                      #Gives a big font, used in all the titles
     def font 
-        TTY::Font.new(:standard)                  #Gives a big font, used in the titles
+        TTY::Font.new(:standard)                  
     end
 end
 
-module Admin           
+module Admin                     #Used for both Tenant and Landlord Admin Detials Options
     def ten_house_options
         puts "What would you like to view?"
         puts " #{@house_details}"
         puts "1 #{@entry_report}"
-        puts "2 #{@exit_report}"              #Used for both Tenant and Landlord Admin Detials Options
+        puts "2 #{@exit_report}"              
         puts "3 #{@tenancy_agreement}"
         puts "Exit"
                            #Open up ^^^^ documents through here in the terminal if time
     end
 end
 
-def homepage_welcome
+def homepage_welcome             # First homepage for the app with input option for next menu, could split into two methods.   
     include Font
     system('clear')
     font1 = font.write("Property Manager")
@@ -37,7 +37,7 @@ def homepage_welcome
     puts"Press Ctrl C to exit the Terminal App at any time"
     puts
     puts"Welcome to the Property Manager Terminal App"             
-    puts                                                          # First homepage for the app with input option for next menu      
+    puts                                                             
     puts"Are you a Tenant or Landlord?"
     while true  
         optiona = gets.chomp.capitalize

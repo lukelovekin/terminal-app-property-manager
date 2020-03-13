@@ -1,6 +1,8 @@
 require 'csv'
 
-def tenant_home
+#Make a class if time
+
+def tenant_home                  #Tenant homepage options menu, could split into two
     system("clear")
     puts font.write("PM, Tenant").colorize(:red)
     puts "Welcome Tenant!"
@@ -32,22 +34,18 @@ def tenant_home
     end
 end
 
-def ten_house_admin
- include Admin
- 
+def ten_house_admin              #Tenant homepage options output, could split into two
+    include Admin
     while true
-
-        ten_house_options
-        
-        option_ha = gets.chomp.capitalize
-        
+        ten_house_options        
+        option_ha = gets.chomp.capitalize    
         case option_ha
         when "1"
-            puts #open doc
+            ten_house_options
         when "2"
-            puts #open doc
+            ten_house_options  #ten_house_options is temporary  #Make makeshift templates for all three of these options with tty-tables if time
         when "3"
-            puts #open doc
+            ten_house_options
         when "Exit" 
             homepage_welcome
         else 
@@ -58,18 +56,17 @@ def ten_house_admin
     end
 end 
 
-def rent_amount_due
-    puts                    #yearly calender with due dates and amounts
-    tenant_home
+def rent_amount_due              #Rent options output            
+    tenant_home           #Make yearly calender with due dates and amounts
 end 
 
-def back_to_hp
+def back_to_hp                   #Back to homepage method, noticed last mintues its very pointless, will delete if time
     puts "Press 'Enter' to go back to Tenant Homepage"         
     gets.chomp
     tenant_home
 end
 
-def maintenance_requests
+def maintenance_requests        #Maintenance options menu, could split into two
     puts "Choose a number"
     puts "1. New Request"
     puts "2. Request Status"
@@ -91,7 +88,7 @@ def maintenance_requests
     end
 end 
 
-def to_csv
+def to_csv                      #Convert maintenance request input into csv file, viewable in landlords maintenance section
     a = []
     b = gets.chomp
     a << b
@@ -101,7 +98,7 @@ def to_csv
     end
 end
 
-def landlord_details
+def landlord_details            #Landlord details
     puts "Name: John West"
     puts "Email: Johnwest@thebest.com.au"
     puts "Mobile: 3892 1111"

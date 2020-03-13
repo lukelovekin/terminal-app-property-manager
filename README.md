@@ -1,17 +1,12 @@
 
 
-Property Manager Terminal App
+# Property Manager Terminal App
 
 
--R2	Seperate Headings	 
--R3	Reference, exact webpage and author,year?
-R4	Link Github Repo && Design a Software Development Plan for a terminal application. The following requirements provide details of what needs to be included in this plan
-vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+REFERENCE !!!!
+ADD GITHUB LINK!!!!!!!!!!!
 
----------------------------------------------------------------------------------------------------------------
-
-
-Statement of purpose and scope
+### Statement of purpose and scope
 
 The "Propery Manager Terminal App" will allow both Landlords and Tenants to manage their rentals without the use of a property manager therefor saving the Landlord management fees between 6-9% of thier weekly rent income. Using this app the Tenant will be able moneouvre their way through their terminal nd following the options and prompts to store and access infomation such as entry and exit reports, tenancy agreements, when rent is due and how much, send maintanence requests etc.
 
@@ -73,9 +68,13 @@ You must include:
 - any dependencies required by the application to operate
 - any system/hardware requirements
 
------------------------------------------------------------------
 
-COMMENT THE SHIT OUTTA THE CODE
+
+
+
+
+
+-------------------------------------------------------
 
 R13	Implement features in the software development plan you have designed. You must utilise a range of programming concepts and structures using Ruby such as:
 - variables and variable scope
@@ -85,11 +84,6 @@ R13	Implement features in the software development plan you have designed. You m
 - input and output
 - importing a Ruby Gem
 - using functions from a Ruby Gem
-
-
-
-R14	Apply DRY (Don’t Repeat Yourself) coding principles to all code produced.
-
 
 
 R15	Apply all style and conventions for the programming language consistently to all code produced.
