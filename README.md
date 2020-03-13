@@ -26,15 +26,9 @@ Using the appropriate gem with its required methods and  block of code to execut
 - Landlord and seperate Tenant side of the application.
 Using loops and conditional control structures and with input from the user they can be directed to their side of the application and directed to where they want to go with the loops implemented to keep them from entering anything other than valid input
 
--The use of Ruby gems.
+- The use of Ruby gems.
+With the use of imported gems and calling them in with their functions I was able to change the colour of font, make big block letters/words, puts and read text in a csv file and create tables and blocks to wrap around text.
 
-
-====
-- use of variables and the concept of variable scope
-
-- error handling
-
-====
 
 ## User interaction and experience
 
