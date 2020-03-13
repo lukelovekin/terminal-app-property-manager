@@ -104,4 +104,3 @@ def landlord_details            #Landlord details
     puts "Mobile: 3892 1111"
     back_to_hp
 end 
-
