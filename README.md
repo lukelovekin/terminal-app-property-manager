@@ -34,7 +34,7 @@ With the use of imported gems and calling them in with their functions I was abl
 
 After following the installation guide and running the app in the terminal the user will greeted with the app logo and a home screen choose whether they are a tenant or a landlord, they will be then directed to their next home screen where there will be options and helpful information and prompts displayed of which they can input using their keyboard to go to where they wouldlike to go. The user will not be left without options and the chance to input any given time, making interaction and navigation clear and easy to use. at any stage when the user is finished they can exit the application. Most of the users interaction will be entering options displayed on screen otherwise further input instructions will be explain where they need to be. If at any point the users input is invalid, a correcting prompt/error message will appear and the application will show its most recent options menu until correct input is entered or until user exits.
 
-## Control flow diagram
+## Control Flow diagram
 
 The application's flowchart is on the following link 
 
